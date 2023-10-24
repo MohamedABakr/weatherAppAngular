@@ -1,0 +1,151 @@
+<section class="">
+    <div class="layr"></div>
+    <div class="main-div w-100 h-100 text-center">
+      <div style="background-color: #7856a8 !important;" class="mx-auto py-5 text-center">
+        <input value="" type="search" class="search" placeholder="City" aria-label="Search"
+            aria-describedby="search-addon" />
+      </div>
+      <section class="vh-100 d-flex justify-content-between">
+        <div class="container py-5 h-100" >
+      
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="">
+              <div class="card" style="border-radius: 35px; box-shadow: 0px 0px 10px #fdfdfd; background-color: #d6d5d8;">
+                <div style="min-width: 300px;" class="card-body p-4">
+      
+                  <div class="d-flex text-light justify-content-between">
+                    <h4 style="color: #1C2331;" class="fw-bold">{{TDlocName}}</h4>
+                    <p style="color: #1C2331; font-weight: 500; padding-top: 5px;" id="next-day-name">{{TDNumMon}}</p>
+                  </div>
+      
+                  <div class="d-flex flex-column text-center mt-3 mb-4">
+                    <h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;"> {{TDtemp_c}}°C </h6>
+                    <span class="small" style="color: #868B94">{{TDconditionTxt}}</span>
+                  </div>
+      
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="flex-grow-1" style="font-size: 1.2rem;">
+                      <div style="font-weight: bolder;"><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1"> {{TDwind_kph}} km/h</span>
+                      </div>
+                      <div style="font-weight: bolder;"><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1"> {{TDhumidity}}% </span>
+                      </div>
+                      <div style="font-weight: bolder;"><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span class="ms-1"> {{TDwind_dir}}</span>
+                      </div>
+                    </div>
+                    <div>
+                      <img [src]="TDconditionIc" width="100px">
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+        </div>
+
+        <div class="container py-5 h-100" >
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="">
+              <div class="card" style="border-radius: 35px; box-shadow: 0px 0px 10px #fdfdfd; background-color: #d6d5d8;">
+                <div style="min-width: 300px;" class="card-body p-4">
+      
+                  <div class="d-flex text-light justify-content-between">
+                    <h4 style="color: #1C2331;" class="fw-bold">{{TDlocName}}</h4>
+                    <p style="color: #1C2331; font-weight: 500; padding-top: 5px;" id="next-day-name">{{NDName}}</p>
+
+                  </div>
+      
+                  <div class="d-flex flex-column text-center mt-3 mb-4">
+                    <h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;"> {{NDmaxtemp_c}}°C </h6>
+                    <span class="small" style="color: #868B94">{{NDdescription}}</span>
+                  </div>
+      
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <h6 style="font-size: 1rem;">Max Temp</h6>
+                      <div
+                        class="d-flex justify-content-center align-items-center m-2 max-tmp" style="font-size: 1rem;"
+                      >
+                        <h3 class="next-max-temp">{{NDmaxtemp_c}}</h3>
+                        <h3><sup>o</sup>C</h3>
+                      </div>
+                    </div>
+                    <div>
+                      <h6 style="font-size: 1rem;">Min Temp</h6>
+                      <div
+                        class="d-flex justify-content-center align-items-center m-2 min-tmp" style="font-size: 1rem;"
+                      >
+                        <h3 class="next-min-temp">{{NDmintemp_c}}</h3>
+                        <h3><sup>o</sup>C</h3>
+                      </div>
+                    </div>
+                    <div>
+                      <img [src]="NDdayIco" width="100px">
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+        </div>
+        
+        <div class="container py-5 h-100" >
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="">
+              <div class="card" style="border-radius: 35px; box-shadow: 0px 0px 10px #fdfdfd; background-color: #d6d5d8;">
+                <div style="min-width: 300px;" class="card-body p-4">
+      
+                  <div class="d-flex text-light justify-content-between">
+                    <h4 style="color: #1C2331;" class="fw-bold">{{TDlocName}}</h4>
+                    <p style="color: #1C2331; font-weight: 500; padding-top: 5px;" id="next-day-name">{{THName}}</p>
+
+                  </div>
+      
+                  <div class="d-flex flex-column text-center mt-3 mb-4">
+                    <h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;"> {{THmaxtemp_c}}°C </h6>
+                    <span class="small" style="color: #868B94">{{THdescription}}</span>
+                  </div>
+      
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <h6 style="font-size: 1rem;">Max Temp</h6>
+                      <div
+                        class="d-flex justify-content-center align-items-center m-2 max-tmp" style="font-size: 1rem;"
+                      >
+                        <h3 class="next-max-temp">{{THmaxtemp_c}}</h3>
+                        <h3><sup>o</sup>C</h3>
+                      </div>
+                    </div>
+                    <div>
+                      <h6 style="font-size: 1rem;">Min Temp</h6>
+                      <div
+                        class="d-flex justify-content-center align-items-center m-2 min-tmp" style="font-size: 1rem;"
+                      >
+                        <h3 class="next-min-temp">{{THmintemp_c}}</h3>
+                        <h3><sup>o</sup>C</h3>
+                      </div>
+                    </div>
+                    <div>
+                      <img [src]="THdayIco" width="100px">
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="second-sec">
+    <div class="layr"></div>
+  </section>
